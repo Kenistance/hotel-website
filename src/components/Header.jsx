@@ -4,20 +4,22 @@ import '../styles/Header.css';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  
   const toggleMenu = () => setMenuOpen(!menuOpen);
-
+  
   return (
     <header className="header">
       <div className="navbar-container">
         <div className="logo">
-          <Link to="/">BomaView</Link>
+          <Link to="/">
+            <h1 className="logo-text">MBOMA VIEW HOTEL</h1>
+          </Link>
         </div>
-
+        
         <div className="hamburger" onClick={toggleMenu}>
           ☰
         </div>
-
+        
         <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
           <Link to="/" onClick={toggleMenu}>Home</Link>
           <Link to="/rooms" onClick={toggleMenu}>Rooms</Link>
