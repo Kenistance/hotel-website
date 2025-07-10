@@ -5,10 +5,11 @@ import Dining from './pages/Dining';
 import Amenities from './pages/Amenities';
 import Meetings from './pages/Meetings'; 
 import Contact from './pages/Contact';
+import About from './pages/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './styles/Layout.css';
-import About from './pages/About';
+
 
 
 function App() {
