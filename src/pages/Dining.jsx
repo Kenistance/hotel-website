@@ -9,9 +9,9 @@ function Dining() {
     {
       name: "Bonhomie Restaurant",
       images: [
-        "/images/bonhomie-1.jpg",
-        "/images/bonhomie-2.jpg",
-        "/images/bonhomie-3.jpg",
+        "/images/drinks.png",
+        "/images/drinks.png",
+        "/images/drinks.png",
         "/images/bonhomie-4.jpg"
       ],
       description:

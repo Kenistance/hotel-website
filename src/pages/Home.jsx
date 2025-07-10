@@ -1,6 +1,24 @@
+import { useEffect, useState } from 'react';
 import '../styles/Home.css';
 
 function Home() {
+  const heroImages = [
+    "/images/drinks.png",
+    "/images/private.png",
+    "/images/mboma.jpg",
+    "/images/room1.png",
+    "/images/view-1.jpg"
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prevIndex => (prevIndex + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="home">
 
@@ -9,9 +27,9 @@ function Home() {
         <p>Email: info@bomaview.com | +254 711 000000 | +254 722 123456</p>
       </div>
 
-      {/* Hero Section */}
+      {/* Hero Section with rotating images */}
       <section className="hero">
-        <img src="/images/hotel.jpg" alt="Hotel Exterior" />
+        <img src={heroImages[currentIndex]} alt="Hotel Scene" key={currentIndex} />
         <div className="hero-text">
           <h1>Welcome to BomaView Hotel</h1>
           <p>Your comfort, our passion.</p>
@@ -89,7 +107,6 @@ function Home() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

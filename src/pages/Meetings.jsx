@@ -47,7 +47,7 @@ function Meetings() {
         </div>
 
         <div className="meeting-card">
-          <img src="/images/private-event.jpg" alt="Private Event Space" />
+          <img src="/images/private.png" alt="Private Event Space" />
           <h4>Private Event Spaces</h4>
           <p>
             Celebrate life’s special moments — from birthdays to bridal showers — in a beautiful setting with flexible menus and attentive staff.

@@ -4,12 +4,12 @@ function Amenities() {
   const amenities = [
     {
       name: "Swimming Pool",
-      image: "/images/pool-1.jpg",
+      image: "/images/view-1.jpg",
       description: "Take a refreshing dip or lounge poolside at our serene outdoor pool, perfect for relaxation after a long day."
     },
     {
       name: "Spa & Wellness",
-      image: "/images/spa1.jpg",
+      image: "/images/view-2.jpg",
       description: "Rejuvenate your body and mind with our professional spa treatments, massages, and wellness therapies."
     }
   ];

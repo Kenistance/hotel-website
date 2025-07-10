@@ -5,7 +5,7 @@ function Rooms() {
     {
       name: "Superior Room",
       price: "$100/night",
-      image: "/images/room-1.jpg",
+      image: "/images/room1.png",
       features: [
         "24-hour front desk", "Wake up calls", "Disabled Access Facilities", "Luggage storage",
         "Bar / Lounge", "Dining/Restaurants", "Room service - 24hr", "Cafe", "Business center",
@@ -15,7 +15,7 @@ function Rooms() {
     {
       name: "Executive Suite",
       price: "$180/night",
-      image: "/images/room-2.jpg",
+      image: "/images/room1.png",
       features: [
         "24-hour front desk", "Wake up calls", "Disabled Access Facilities", "Luggage storage",
         "Bar / Lounge", "Dining/Restaurants", "Room service - 24hr", "Cafe", "Business center",
@@ -25,7 +25,7 @@ function Rooms() {
     {
       name: "Deluxe Suite",
       price: "$150/night",
-      image: "/images/room-3.jpg",
+      image: "/images/room1.png",
       features: [
         "24-hour front desk", "Wake up calls", "Disabled Access Facilities", "Luggage storage",
         "Bar / Lounge", "Dining/Restaurants", "Room service - 24hr", "Cafe", "Business center",
