@@ -1,0 +1,29 @@
+.dining-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .dining-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .dining-item {
+    width: 250px;
+  }
+  
+  .dining-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .dining-item h4 {
+    margin-top: 0.75rem;
+    color: #2d3748;
+  }
+  

@@ -1,0 +1,81 @@
+/* Container for the entire rooms section */
+.rooms-section {
+  padding: 2rem 1rem;
+  background-color: #f5f3ef; /* light beige background */
+  text-align: center;
+}
+
+/* Section heading */
+.rooms-section h2 {
+  font-size: 2rem;
+  color: #4e342e; /* deep brown */
+  margin-bottom: 2rem;
+}
+
+/* Grid layout for cards */
+.room-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual room card */
+.room-card {
+  background-color: #fffaf5; /* ivory card */
+  border: 1px solid #d7ccc8; /* soft border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover animation */
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Room image */
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #d7ccc8;
+}
+
+/* Room title */
+.room-card h3 {
+  margin: 1rem 1rem 0.5rem;
+  font-size: 1.2rem;
+  color: #4e342e;
+}
+
+/* Room price */
+.room-card p {
+  margin: 0 1rem 0.5rem;
+  color: #8d6e63;
+  font-weight: 500;
+}
+
+/* Features list */
+.room-card ul {
+  margin: 0 1rem 1rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  font-size: 0.95rem;
+  color: #5d4037;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .room-card {
+    width: 90%;
+  }
+
+  .rooms-section h2 {
+    font-size: 1.75rem;
+  }
+}
