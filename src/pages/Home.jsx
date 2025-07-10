@@ -15,13 +15,12 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % heroImages.length);
-    }, 60000);
+    }, 60000); // Change image every 60 seconds
     return () => clearInterval(interval);
-  }, []);
+  }, [heroImages.length]);
 
   return (
     <div className="home">
-
       {/* Top Contact Info */}
       <div className="top-bar">
         <p>Email: info@bomaview.com | +254 711 000000 | +254 722 123456</p>
@@ -29,7 +28,14 @@ function Home() {
 
       {/* Hero Section with rotating images */}
       <section className="hero">
-        <img src={heroImages[currentIndex]} alt="Hotel Scene" key={currentIndex} />
+        {heroImages.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt="Hotel Scene"
+            className={`hero-img ${index === currentIndex ? 'active' : ''}`}
+          />
+        ))}
         <div className="hero-text">
           <h1>Welcome to BomaView Hotel</h1>
           <p>Your comfort, our passion.</p>
