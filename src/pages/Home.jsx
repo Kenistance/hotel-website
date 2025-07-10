@@ -4,6 +4,11 @@ function Home() {
   return (
     <div className="home">
 
+      {/* Top Contact Info */}
+      <div className="top-bar">
+        <p>Email: info@bomaview.com | +254 711 000000 | +254 722 123456</p>
+      </div>
+
       {/* Hero Section */}
       <section className="hero">
         <img src="/images/hotel.jpg" alt="Hotel Exterior" />
@@ -17,10 +22,10 @@ function Home() {
       <section className="why-choose">
         <h2>Why Choose Us</h2>
         <div className="features-grid">
-          <div className="feature"> Luxurious rooms with sea views</div>
-          <div className="feature"> Fine dining experiences</div>
-          <div className="feature"> Relaxing spa and wellness services</div>
-          <div className="feature"> Convenient location near top attractions</div>
+          <div className="feature">Luxurious rooms with sea views</div>
+          <div className="feature">Fine dining experiences</div>
+          <div className="feature">Relaxing spa and wellness services</div>
+          <div className="feature">Convenient location near top attractions</div>
         </div>
       </section>
 
@@ -50,6 +55,38 @@ function Home() {
             allow="autoplay; encrypted-media"
             allowFullScreen
           ></iframe>
+        </div>
+      </section>
+
+      {/* Book Now */}
+      <section className="book-now">
+        <h2>Ready to Stay With Us?</h2>
+        <a
+          href="https://theconcordhotels.securedreservations.com/reservation?guest=ac1%3D2"
+          className="book-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book Now
+        </a>
+      </section>
+
+      {/* Guest Testimonials */}
+      <section className="testimonials">
+        <h2>What Guests Say</h2>
+        <div className="testimonial-cards">
+          <div className="testimonial">
+            <p>"Absolutely loved my stay — the spa and food were top notch!"</p>
+            <strong>- Grace M., Nairobi</strong>
+          </div>
+          <div className="testimonial">
+            <p>"The staff were friendly and the rooms had a perfect ocean view."</p>
+            <strong>- John K., Mombasa</strong>
+          </div>
+          <div className="testimonial">
+            <p>"I’ll be coming back again. The atmosphere was peaceful and classy."</p>
+            <strong>- Fatuma L., Tanzania</strong>
+          </div>
         </div>
       </section>
 

@@ -9,7 +9,7 @@ function Header() {
         <Link to="/rooms">Rooms</Link>
         <Link to="/dining">Dining</Link>
         <Link to="/amenities">Amenities</Link>
-        <Link to="/activities">Activities</Link>
+        <Link to="/meetings">Meetings</Link>
         <Link to="/contact">Contact</Link>
       </nav>
     </header>
