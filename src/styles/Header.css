@@ -1,33 +1,70 @@
-/* src/styles/Header.css */
-
+/* Base header style */
 .header {
-  background-color: #fffaf5;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 0.75rem 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+/* Container for nav and logo */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Nav links (desktop default) */
 .navbar {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #4e342e;
+  color: #333;
   font-weight: 500;
-  font-size: 1rem;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  border-bottom: 2px solid transparent;
 }
 
-.navbar a:hover {
-  color: #6d4c41;
-  border-bottom: 2px solid #6d4c41;
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    display: none;
+    padding: 1rem;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .navbar a {
+    padding: 0.5rem 0;
+  }
 }
