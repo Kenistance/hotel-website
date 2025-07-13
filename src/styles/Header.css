@@ -1,0 +1,240 @@
+/* Header.css - Modern Navigation */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 0;
+  }
+  
+  .header.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+  }
+  
+  .logo {
+    flex-shrink: 0;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .logo-text {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #1a1a1a;
+  }
+  
+  .hamburger:hover {
+    background: rgba(102, 126, 234, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+  }
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s ease;
+  }
+  
+  .navbar a:hover::after,
+  .navbar a.active::after {
+    width: 100%;
+  }
+  
+  .navbar a:hover {
+    color: #667eea;
+    transform: translateY(-1px);
+  }
+  
+  /* Mobile Navigation */
+  @media (max-width: 768px) {
+    .navbar-container {
+      height: 70px;
+    }
+    
+    .hamburger {
+      display: flex;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      flex-direction: column;
+      padding: 30px 20px;
+      gap: 25px;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar.open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .navbar a {
+      font-size: 18px;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .navbar a::after {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .logo-text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Modern hamburger animation */
+  .hamburger {
+    position: relative;
+    z-index: 1001;
+  }
+  
+  .hamburger.active {
+    color: #667eea;
+  }
+  
+  /* Sticky header enhancement */
+  .header.sticky {
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Logo hover effect */
+  .logo:hover .logo-text {
+    animation: pulse 0.6s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Navigation accessibility */
+  .navbar a:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+  
+  .hamburger:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .header {
+      background: rgba(26, 26, 26, 0.95);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar a {
+      color: #ffffff;
+    }
+    
+    .navbar a:hover {
+      color: #8b9cf4;
+    }
+    
+    .hamburger {
+      color: #ffffff;
+    }
+    
+    .hamburger:hover {
+      background: rgba(139, 156, 244, 0.1);
+    }
+    
+    .navbar {
+      background: rgba(26, 26, 26, 0.98);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
