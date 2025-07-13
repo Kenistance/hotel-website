@@ -12,7 +12,7 @@ function Dining() {
         "/images/drinks.png",
         "/images/drinks.png",
         "/images/drinks.png",
-        "/images/bonhomie-4.jpg"
+        "/images/drinks.png"
       ],
       description:
         "Bonhomie offers a warm and friendly atmosphere with contemporary Continental gourmet dishes, fine wines, and vibrant terrace dining from 6:00am to Midnight.",
@@ -22,10 +22,10 @@ function Dining() {
     {
       name: "Umami Oriental",
       images: [
-        "/images/umami-1.jpg",
+        "/images/drinks.png",
         "/images/umami-2.jpg",
-        "/images/umami-3.jpg",
-        "/images/umami-4.jpg"
+        "/images/drinks.png",
+        "/images/drinks.pngg"
       ],
       description:
         "Experience savory Asian fusion — Chinese, Japanese, Thai, and Korean flavors come together at Umami, open daily from 11:00am to 10:00pm.",
