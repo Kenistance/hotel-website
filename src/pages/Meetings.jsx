@@ -15,7 +15,7 @@ function Meetings() {
       <div className="meeting-grid">
 
         <div className="meeting-card">
-          <img src="/images/hall-1.jpg" alt="Main Conference Hall" />
+          <img src="/images/private.png" alt="Main Conference Hall" />
           <h4>Main Conference Hall</h4>
           <p>
             A spacious, flexible venue for up to 200 guests. Perfect for conferences, workshops, and social gatherings. Includes projector, sound system, and catering.
@@ -23,7 +23,7 @@ function Meetings() {
         </div>
 
         <div className="meeting-card">
-          <img src="/images/boardroom.jpg" alt="Executive Boardroom" />
+          <img src="/images/private.png" alt="Executive Boardroom" />
           <h4>Executive Boardroom</h4>
           <p>
             A quiet, fully equipped room ideal for strategic meetings and private sessions. Comfortably fits up to 20 participants.
@@ -31,7 +31,7 @@ function Meetings() {
         </div>
 
         <div className="meeting-card">
-          <img src="/images/business-centre.jpg" alt="Business Centre" />
+          <img src="/images/private.png" alt="Business Centre" />
           <h4>Business Centre</h4>
           <p>
             Located next to the lobby for easy access. Services include printing, scanning, and secure internet access.
